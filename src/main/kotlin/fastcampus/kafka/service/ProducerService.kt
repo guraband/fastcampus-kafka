@@ -12,6 +12,7 @@ class ProducerService(
 
     companion object {
         const val TOPIC_NAME = "topic5"
+        const val JSON_TOPIC_NAME = "topic6"
     }
 
     fun send(message: String) {
@@ -31,6 +32,6 @@ class ProducerService(
     }
 
     fun sendJson(message: Message) {
-        jsonKafkaTemplate.send(TOPIC_NAME, message)
+        jsonKafkaTemplate.send(JSON_TOPIC_NAME, message)
     }
 }
