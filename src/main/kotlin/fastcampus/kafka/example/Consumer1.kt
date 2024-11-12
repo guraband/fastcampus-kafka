@@ -1,4 +1,4 @@
-package fastcampus.kafka
+package fastcampus.kafka.example
 
 import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.clients.consumer.KafkaConsumer
